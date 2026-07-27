@@ -1,0 +1,90 @@
+2026-07-26 21:06:37,690 INFO FAILED: Checkpoint missing: model.pth
+2026-07-26 21:29:26,384 INFO Model loaded successfully
+2026-07-26 21:29:26,402 INFO Validated 50 calibration samples
+2026-07-26 21:29:32,834 WARNING The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 13).
+2026-07-26 21:29:32,874 WARNING Failed to convert the model to the target version 13 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\__init__.py", line 120, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+             ^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\__init__.py", line 115, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnx\version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: D:\a\onnx\onnx\onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $14 for Relu
+2026-07-26 21:29:32,874 INFO Removed 1 unused nodes
+2026-07-26 21:29:32,880 INFO No unused functions to remove
+2026-07-26 21:29:32,880 INFO Skipping constant folding for node 'node_conv2d' because it is graph input to preserve graph signature
+2026-07-26 21:29:32,890 INFO Removed 2 unused nodes
+2026-07-26 21:29:32,890 INFO No unused functions to remove
+2026-07-26 21:29:32,892 INFO Skipping constant folding for node 'node_conv2d' because it is graph input to preserve graph signature
+2026-07-26 21:29:32,897 INFO No unused functions to remove
+2026-07-26 21:29:32,897 INFO PassManager: No more graph changes detected after step 1
+2026-07-26 21:29:32,902 INFO ONNX export verified
+2026-07-26 21:29:34,796 INFO SavedModel exported successfully
+2026-07-26 21:29:34,803 INFO FAILED: SavedModel file does not exist at: saved_model\{saved_model.pbtxt|saved_model.pb}
+2026-07-26 21:31:10,450 INFO Model loaded successfully
+2026-07-26 21:31:10,472 INFO Validated 50 calibration samples
+2026-07-26 21:31:14,987 WARNING The model version conversion is not supported by the onnxscript version converter and fallback is enabled. The model will be converted using the onnx C API (target version: 13).
+2026-07-26 21:31:15,025 WARNING Failed to convert the model to the target version 13 using the ONNX C API. The model was not modified
+Traceback (most recent call last):
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\__init__.py", line 120, in call
+    converted_proto = _c_api_utils.call_onnx_api(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\_c_api_utils.py", line 65, in call_onnx_api
+    result = func(proto)
+             ^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnxscript\version_converter\__init__.py", line 115, in _partial_convert_version
+    return onnx.version_converter.convert_version(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\acer\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\onnx\version_converter.py", line 39, in convert_version
+    converted_model_str = C.convert_version(model_str, target_version)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: D:\a\onnx\onnx\onnx/version_converter/BaseConverter.h:68: adapter_lookup: Assertion `false` failed: No Adapter From Version $14 for Relu
+2026-07-26 21:31:15,033 INFO Removed 1 unused nodes
+2026-07-26 21:31:15,033 INFO No unused functions to remove
+2026-07-26 21:31:15,033 INFO Skipping constant folding for node 'node_conv2d' because it is graph input to preserve graph signature
+2026-07-26 21:31:15,042 INFO Removed 2 unused nodes
+2026-07-26 21:31:15,042 INFO No unused functions to remove
+2026-07-26 21:31:15,042 INFO Skipping constant folding for node 'node_conv2d' because it is graph input to preserve graph signature
+2026-07-26 21:31:15,050 INFO No unused functions to remove
+2026-07-26 21:31:15,050 INFO PassManager: No more graph changes detected after step 1
+2026-07-26 21:31:15,060 INFO ONNX export verified
+2026-07-26 21:31:16,483 INFO SavedModel exported successfully
+2026-07-26 21:31:16,483 INFO FAILED: SavedModel file does not exist at: saved_model\{saved_model.pbtxt|saved_model.pb}
+2026-07-27 09:36:58,110 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+
+2026-07-27 09:37:00,027 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+
+2026-07-27 09:37:01,241 INFO Model loaded successfully
+2026-07-27 09:37:01,313 INFO Validated 50 calibration samples
+2026-07-27 09:37:01,541 INFO FAILED: No module named 'onnxscript'
+2026-07-27 10:00:44,112 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+
+2026-07-27 10:00:46,724 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+
+2026-07-27 10:00:47,985 INFO Model loaded successfully
+2026-07-27 10:00:48,018 INFO Validated 50 calibration samples
+2026-07-27 10:00:48,346 INFO FAILED: No module named 'onnxscript'
+2026-07-27 10:03:23,378 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.logging.TaskLevelStatusMessage is deprecated. Please use tf.compat.v1.logging.TaskLevelStatusMessage instead.
+
+2026-07-27 10:03:25,928 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\tensorflow_probability\python\internal\backend\numpy\_utils.py:48: The name tf.control_flow_v2_enabled is deprecated. Please use tf.compat.v1.control_flow_v2_enabled instead.
+
+2026-07-27 10:03:27,209 INFO Model loaded successfully
+2026-07-27 10:03:27,234 INFO Validated 50 calibration samples
+2026-07-27 10:03:27,820 INFO ONNX export verified
+2026-07-27 10:03:31,952 WARNING From C:\Users\acer\Documents\AIML-Assessment\Module-3\onboarding-quantization\Vedha-Sree-G\task_06_pytorch_to_int8_tflite\tf310\lib\site-packages\keras\src\utils\version_utils.py:76: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2026-07-27 10:03:32,013 INFO Function `__call__` contains input name(s) x with unsupported characters which will be renamed to transpose_11_x in the SavedModel.
+2026-07-27 10:03:32,187 INFO Found untraced functions such as gen_tensor_dict while saving (showing 1 of 1). These functions will not be directly callable after loading.
+2026-07-27 10:03:32,317 INFO Assets written to: saved_model\assets
+2026-07-27 10:03:32,325 INFO Writing fingerprint to saved_model\fingerprint.pb
+2026-07-27 10:03:32,341 INFO SavedModel exported successfully
+2026-07-27 10:03:32,810 INFO INT8 TFLite created
+2026-07-27 10:03:32,839 INFO Verification complete
+2026-07-27 10:03:32,839 INFO SUCCESS
