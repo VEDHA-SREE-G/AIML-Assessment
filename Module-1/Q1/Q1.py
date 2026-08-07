@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+
+#Load csv file
 df = pd.read_csv("sales_data.csv")
 
 #Clean missing values
