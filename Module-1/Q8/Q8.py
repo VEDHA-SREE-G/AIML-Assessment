@@ -1,3 +1,5 @@
+# Manufacturing Defect Detection
+
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
@@ -16,16 +18,20 @@ BATCH_SIZE = 32
 EPOCHS = 3
 
 # Data Generator
-datagen = ImageDataGenerator(
+train_datagen = ImageDataGenerator(
     rescale=1./255,
     rotation_range=20,
     zoom_range=0.2,
     horizontal_flip=True,
     validation_split=0.2
 )
+val_datagen = ImageDataGenerator(
+    rescale=1./255,
+    validation_split=0.2
+)
 
 # Training Data
-train_data = datagen.flow_from_directory(
+train_data = train_datagen.flow_from_directory(
     DATASET_PATH,
     target_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
@@ -34,7 +40,7 @@ train_data = datagen.flow_from_directory(
 )
 
 # Validation Data
-val_data = datagen.flow_from_directory(
+val_data = val_datagen.flow_from_directory(
     DATASET_PATH,
     target_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
